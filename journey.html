@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Journey — V.L. Satyanath</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Clash+Display:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+      <div class="loader-text"><span id="loader-pct">0</span>%</div>
+      <div class="loader-label">Initializing System...</div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- Background Canvas -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Nav -->
+  <nav id="mainNav">
+    <div class="nav-brand">
+      <span class="brand-bracket">VLS</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" data-text="Home">Home</a></li>
+      <li><a href="about.html" data-text="About">About</a></li>
+      <li><a href="stack.html" data-text="Stack">Stack</a></li>
+      <li><a href="projects.html" data-text="Projects">Projects</a></li>
+      <li><a href="certificates.html" data-text="Certificates">Certificates</a></li>
+      <li><a href="journey.html" data-text="Journey">Journey</a></li>
+      <li><a href="contact.html" data-text="Contact">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" class="mob-link">Home</a></li>
+      <li><a href="about.html" class="mob-link">About</a></li>
+      <li><a href="stack.html" class="mob-link">Stack</a></li>
+      <li><a href="projects.html" class="mob-link">Projects</a></li>
+      <li><a href="certificates.html" class="mob-link">Certificates</a></li>
+      <li><a href="journey.html" class="mob-link">Journey</a></li>
+      <li><a href="contact.html" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════ TIMELINE ═══════════ -->
+  <section id="timeline">
+    <div class="section-tag">04 / Journey</div>
+    <h2 class="section-heading reveal">My<br/><em>Timeline</em></h2>
+    <div class="timeline-wrap">
+
+      <div class="tl-item reveal tl-right">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-date">2019 — 2020</div>
+          <h3 class="tl-title">Perfect Score 🏆</h3>
+          <p class="tl-org">Sasi School of Excellence, Tanuku</p>
+          <p class="tl-desc">Achieved 100% in Matriculation — a foundation built on discipline and excellence.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal tl-left">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-date">2020 — 2022</div>
+          <h3 class="tl-title">Intermediate PCM 📚</h3>
+          <p class="tl-org">Sasi Junior College, Tanuku</p>
+          <p class="tl-desc">Scored 92.5% in PCM — solid groundwork in mathematics, physics, and chemistry.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal tl-right">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-date">Oct 2023</div>
+          <h3 class="tl-title">First Certification 🎓</h3>
+          <p class="tl-org">Simplilearn</p>
+          <p class="tl-desc">Completed Digital and Social Selling — expanding skill set beyond pure technical domains.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal tl-left">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-date">Aug 2023 — Present</div>
+          <h3 class="tl-title">B.Tech CSE 💻</h3>
+          <p class="tl-org">Lovely Professional University, Phagwara</p>
+          <p class="tl-desc">Pursuing Computer Science & Engineering, diving deep into algorithms, data structures, and modern development.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal tl-right">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-date">Apr — May 2024</div>
+          <h3 class="tl-title">Adidas Sales Project 📊</h3>
+          <p class="tl-org">Independent Project</p>
+          <p class="tl-desc">Analyzed 10+ years of Adidas sales data using Excel — uncovering business insights and seasonality patterns.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal tl-left">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-date">Sep 2024</div>
+          <h3 class="tl-title">Networking Certification 🌐</h3>
+          <p class="tl-org">Coursera — Google</p>
+          <p class="tl-desc">Completed "The Bits and Bytes of Computer Networking" — solidifying understanding of network fundamentals.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal tl-right">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-date">May — Jun 2025</div>
+          <h3 class="tl-title">SMS Spam Detector 🤖</h3>
+          <p class="tl-org">Independent ML Project</p>
+          <p class="tl-desc">Built an NLP-powered spam classification pipeline using multiple ML algorithms — 40% reduction in manual effort.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal tl-left">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-date">Jun — Jul 2025</div>
+          <h3 class="tl-title">Teaching Intern 👨‍🏫</h3>
+          <p class="tl-org">Lovely Professional University</p>
+          <p class="tl-desc">Led Data Science & DSA sessions, covering Python, NumPy, Pandas, trees, graphs, and web frameworks.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal tl-right">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-date">Nov 2025</div>
+          <h3 class="tl-title">Web Design Cert 🎨</h3>
+          <p class="tl-org">freeCodeCamp</p>
+          <p class="tl-desc">Earned Responsive Web Design certification — bridging the gap between data and frontend development.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-bracket">&lt;</span>VLS<span class="brand-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy">© 2025 V.L. Satyanath · Engineered with ♥ in Phagwara</p>
+      <div class="footer-links">
+        <a href="https://github.com/splv181819" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/lokeshsatyanath/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

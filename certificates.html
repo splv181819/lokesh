@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Certificates — V.L. Satyanath</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Clash+Display:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+      <div class="loader-text"><span id="loader-pct">0</span>%</div>
+      <div class="loader-label">Initializing System...</div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- Background Canvas -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Nav -->
+  <nav id="mainNav">
+    <div class="nav-brand">
+      <span class="brand-bracket">VLS</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" data-text="Home">Home</a></li>
+      <li><a href="about.html" data-text="About">About</a></li>
+      <li><a href="stack.html" data-text="Stack">Stack</a></li>
+      <li><a href="projects.html" data-text="Projects">Projects</a></li>
+      <li><a href="certificates.html" data-text="Certificates">Certificates</a></li>
+      <li><a href="journey.html" data-text="Journey">Journey</a></li>
+      <li><a href="contact.html" data-text="Contact">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" class="mob-link">Home</a></li>
+      <li><a href="about.html" class="mob-link">About</a></li>
+      <li><a href="stack.html" class="mob-link">Stack</a></li>
+      <li><a href="projects.html" class="mob-link">Projects</a></li>
+      <li><a href="certificates.html" class="mob-link">Certificates</a></li>
+      <li><a href="journey.html" class="mob-link">Journey</a></li>
+      <li><a href="contact.html" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════ CERTIFICATES ═══════════ -->
+  <section id="certificates">
+    <div class="section-tag">04 / Certificates</div>
+    <h2 class="section-heading reveal">Professional<br/><em>Certifications</em></h2>
+    <div class="certificates-grid">
+
+      <!-- Certificate 1 — freeCodeCamp -->
+      <div class="certificate-card reveal">
+        <div class="cert-image">
+          <img src="src/freecodecamp.png" alt="freeCodeCamp Legacy Responsive Web Design V8" loading="lazy">
+          <div class="cert-overlay">
+            <div class="cert-issuer">freeCodeCamp</div>
+            <div class="cert-date">Nov 2023</div>
+          </div>
+        </div>
+        <div class="cert-content">
+          <h3 class="cert-title">Legacy Responsive Web Design V8</h3>
+          <p class="cert-description">Developer Certification representing approximately 300 hours of work covering modern responsive design techniques and web standards.</p>
+          <div class="cert-skills">
+            <span>HTML5</span><span>CSS3</span><span>Responsive Design</span><span>Flexbox</span><span>Grid</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 2 — Simplilearn SkillUP -->
+      <div class="certificate-card reveal">
+        <div class="cert-image">
+          <img src="src/Simplilearn.png" alt="Simplilearn Digital and Social Selling Certified Associate" loading="lazy">
+          <div class="cert-overlay">
+            <div class="cert-issuer">Simplilearn SkillUP</div>
+            <div class="cert-date">Oct 2023</div>
+          </div>
+        </div>
+        <div class="cert-content">
+          <h3 class="cert-title">Digital and Social Selling Certified Associate</h3>
+          <p class="cert-description">Completed the Digital and Social Selling Certified Associate Training Program, demonstrating initiative and commitment to advancing professional skills.</p>
+          <div class="cert-skills">
+            <span>Digital Marketing</span><span>Social Selling</span><span>LinkedIn</span><span>Lead Generation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 3 — Google / Coursera -->
+      <div class="certificate-card reveal">
+        <div class="cert-image">
+          <img src="src/Google.png" alt="Google — The Bits and Bytes of Computer Networking" loading="lazy">
+          <div class="cert-overlay">
+            <div class="cert-issuer">Google · Coursera</div>
+            <div class="cert-date">Sep 2024</div>
+          </div>
+        </div>
+        <div class="cert-content">
+          <h3 class="cert-title">The Bits and Bytes of Computer Networking</h3>
+          <p class="cert-description">Google-authorized course offered through Coursera covering core networking concepts including TCP/IP, DNS, the web, and network troubleshooting.</p>
+          <div class="cert-skills">
+            <span>Networking</span><span>TCP/IP</span><span>DNS</span><span>HTTP/HTTPS</span><span>Troubleshooting</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-bracket">&lt;</span>VLS<span class="brand-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy">© 2025 V.L. Satyanath · Engineered with ♥ in Phagwara</p>
+      <div class="footer-links">
+        <a href="https://github.com/splv181819" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/lokeshsatyanath/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

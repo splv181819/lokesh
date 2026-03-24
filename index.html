@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>V.L. Satyanath — Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Clash+Display:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+      <div class="loader-text"><span id="loader-pct">0</span>%</div>
+      <div class="loader-label">Initializing System...</div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- Background Canvas -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Nav -->
+  <nav id="mainNav">
+    <div class="nav-brand">
+      <span class="brand-bracket">VLS</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" data-text="Home">Home</a></li>
+      <li><a href="about.html" data-text="About">About</a></li>
+      <li><a href="stack.html" data-text="Stack">Stack</a></li>
+      <li><a href="projects.html" data-text="Projects">Projects</a></li>
+      <li><a href="certificates.html" data-text="Certificates">Certificates</a></li>
+      <li><a href="journey.html" data-text="Journey">Journey</a></li>
+      <li><a href="contact.html" data-text="Contact">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" class="mob-link">Home</a></li>
+      <li><a href="about.html" class="mob-link">About</a></li>
+      <li><a href="stack.html" class="mob-link">Stack</a></li>
+      <li><a href="projects.html" class="mob-link">Projects</a></li>
+      <li><a href="certificates.html" class="mob-link">Certificates</a></li>
+      <li><a href="journey.html" class="mob-link">Journey</a></li>
+      <li><a href="contact.html" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name" id="heroName">
+        <span class="glitch" data-text="V.L.Satyanath">V.L.Satyanath</span>
+      </h1>
+      <div class="hero-role">
+        <span class="role-prefix">&gt;_</span>
+        <span id="typewriter"></span><span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-bio">
+        Building scalable systems &amp; intelligent applications from Phagwara, Punjab.
+        CS Engineer passionate about data, clean code, and meaningful technology.
+      </p>
+
+      <div class="hero-actions">
+        <a href="projects.html" class="btn-primary">
+          <span>View Projects</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="contact.html" class="btn-outline">Let's Talk</a>
+
+        <!-- ═══ DOWNLOAD CV BUTTON ═══
+             Place your resume PDF in the same folder as index.html
+             and rename it to  VLS_Resume.pdf  — or change the href below. -->
+        <a href="src/lokesh.pdf" class="btn-outline btn-download" download="VLS_Satyanath_CV.pdf" aria-label="Download CV">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+            <path d="M12 15V3"/>
+            <path d="M8 11l4 4 4-4"/>
+            <path d="M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"/>
+          </svg>
+          Download CV
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hstat"><span class="hstat-n" data-target="6">0</span><span class="hstat-l">Projects</span></div>
+        <div class="hstat-sep"></div>
+        <div class="hstat"><span class="hstat-n" data-target="3">0</span><span class="hstat-l">Certs</span></div>
+        <div class="hstat-sep"></div>
+        <div class="hstat"><span class="hstat-n" data-target="4">0</span><span class="hstat-l">Languages</span></div>
+        <div class="hstat-sep"></div>
+        <div class="hstat"><span class="hstat-n" data-target="100">0</span><span class="hstat-suf">%</span><br/><span class="hstat-l">Class X</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+
+      <!-- ================================================
+           YOUR PHOTO
+           1. Save your photo in the same folder as index.html
+           2. Change  src="your-photo.jpg"  to your filename
+              e.g.  src="lokesh.jpg"  or  src="photo.png"
+           ================================================ -->
+      <div class="photo-wrapper">
+        <div class="photo-ring"></div>
+        <div class="photo-ring ring-2"></div>
+        <img
+          src="src/lokesh.png"
+          alt="V.L. Satyanath"
+          class="hero-photo"
+          id="heroPhoto"
+          onerror="this.style.display='none'; document.getElementById('photoPlaceholder').style.display='flex';"
+        />
+        <!-- Placeholder shown if image file is missing -->
+        <div class="photo-placeholder" id="photoPlaceholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+          </svg>
+          <span>lokesh.png</span>
+        </div>
+        <div class="photo-status">
+          <span class="eyebrow-dot"></span> Open to work
+        </div>
+      </div>
+
+      <div class="terminal-card" id="terminalCard">
+        <div class="terminal-header">
+          <span class="t-dot red"></span>
+          <span class="t-dot yellow"></span>
+          <span class="t-dot green"></span>
+          <span class="t-title">satyanath@portfolio:~</span>
+        </div>
+        <div class="terminal-body" id="terminalBody">
+          <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></div>
+          <div class="t-line t-out" id="tOut1"></div>
+          <div class="t-line" id="tLine2"></div>
+          <div class="t-line t-out" id="tOut2"></div>
+          <div class="t-line" id="tLine3"></div>
+          <div class="t-line t-out" id="tOut3"></div>
+          <div class="t-line" id="tLine4"></div>
+          <div class="t-line t-out thl" id="tOut4"></div>
+        </div>
+      </div>
+
+      <div class="float-badge badge-1">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        Full Stack
+      </div>
+      <div class="float-badge badge-2">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+        Data Science
+      </div>
+      <div class="float-badge badge-3">🐍 Python</div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-bracket">VLS</span>
+      </div>
+      <p class="footer-copy">© 2025 V.L. Satyanath · Engineered with ♥ in Phagwara</p>
+      <div class="footer-links">
+        <a href="https://github.com/splv181819" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/lokeshsatyanath/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
